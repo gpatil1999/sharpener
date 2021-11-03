@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(https://i.picsum.photos/id/976/2500/1500.jpg?hmac=XGHT2p2vAKdwaHzkmEKYtWn0WVODkbtToVzL1PHvq1Y);
+    background-size: cover;
+    font-family: sans-serif;
+  }
+  
+  .loginBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 620px;
+    padding: 70px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  h2,h5 {
+    margin: 0;
+    padding: 0 0 26px;
+    color: #ff8c00;
+    text-align: center;
+  }
+  
+  .loginBox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .loginBox input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .loginBox input[type="text"],
+  .loginBox input[name="email"],
+  .loginBox input[name="Phone"],
+  .loginBox input[name="timeforcall"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  ::placeholder
+  {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .loginBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #eee;
+    font-size: 16px;
+    background-color: #FF8C00;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 12px 0 18px;
+  }
+  
+  .loginBox input[type="submit"]:hover {
+    background-color: #ff9719;
+    color: #fff;
+  }
