@@ -1,4 +1,6 @@
 
+document.addEventListener('DOMContentLoaded',getLocalData());
+
 function getLocalData(){
     var retrievedObject = localStorage.getItem('myObj');
     console.log(JSON.parse(retrievedObject));
