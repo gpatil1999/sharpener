@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="cssstyle.css">
     <title>Document</title>
 </head>
-<body>
+<body onpageshow="getLocalData()">
     <div class="loginBox">
         <h2>Book a Call</h2>
         <h5>Book a Call slot and our representative will call you</h5>
@@ -24,6 +24,7 @@
           <input type="submit" name="getcall" onClick="display()">
         </form>
       </div>
+      <ul id="items" class="list-group"></ul>
       <script src = "index.js"></script>
 </body>
 </html>
