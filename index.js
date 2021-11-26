@@ -1,4 +1,4 @@
-
+// const axios = require('axios');
 document.addEventListener('DOMContentLoaded',getLocalData());
 
 function getLocalData(){
@@ -29,14 +29,10 @@ function getLocalData(){
 }
 
 function display() { 
+    console.log('in display');
     document.addEventListener("click", function(event) {
         event.preventDefault();
     });
-
-    var values = JSON.parse(localStorage.getItem('myObj'));
-    if (values === null) {
-      values = [];
-    }
 
     let newObj = {
         name : document.getElementById("username").value,
@@ -44,8 +40,12 @@ function display() {
         phone : document.getElementById("userphone").value
     }
 
-    values.push(newObj);
-
-    localStorage.setItem("myObj", JSON.stringify(values));
-    console.log(localStorage.getItem("myObj"));
+   axios.post("https://crudcrud.com/api/c1a2e3b224e648f9b8eb327960ebb9b0/appointmentData", newObj)
+   .then((resp)=>{
+       console.log(resp);
+   })
+   .catch((err) => {
+       console.log(err);
+   })
+    
 }
